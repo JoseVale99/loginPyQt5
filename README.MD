@@ -15,3 +15,7 @@ Vista de login en python con la librería PyQT5
 1. PyQT5
     - pip install PyQt5
 
+
+## Vista previa
+
+<img src="login.png">
