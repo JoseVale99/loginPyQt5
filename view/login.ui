@@ -13,11 +13,11 @@
     <x>0</x>
     <y>0</y>
     <width>694</width>
-    <height>500</height>
+    <height>520</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+   <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -30,8 +30,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>694</width>
-    <height>500</height>
+    <width>787</width>
+    <height>540</height>
    </size>
   </property>
   <property name="baseSize">
@@ -49,6 +49,9 @@
   <property name="windowTitle">
    <string>Login</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <property name="animated">
    <bool>true</bool>
   </property>
@@ -63,6 +66,21 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QFrame" name="frame1">
       <property name="sizePolicy">
@@ -87,23 +105,34 @@
        <string/>
       </property>
       <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
+       <enum>QFrame::Plain</enum>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetNoConstraint</enum>
+       </property>
        <item>
         <widget class="QLabel" name="label">
          <property name="font">
           <font>
-           <family>Noto Sans Brahmi</family>
-           <pointsize>12</pointsize>
+           <family>Dyuthi</family>
           </font>
          </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
          <property name="text">
-          <string>Be part  of our awesome team and
-have fun with us.</string>
+          <string>Be part  of our awesome team
+and have fun with us.</string>
          </property>
          <property name="textFormat">
           <enum>Qt::PlainText</enum>
@@ -141,12 +170,18 @@ have fun with us.</string>
        </size>
       </property>
       <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
        <item>
         <spacer name="verticalSpacer_2">
          <property name="orientation">
@@ -175,56 +210,10 @@ have fun with us.</string>
           <enum>QFrame::Plain</enum>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="10" column="2">
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>25</width>
-              <height>10</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="0">
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Minimum</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>15</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="8" column="1">
-           <widget class="QCheckBox" name="checkBox">
-            <property name="text">
-             <string>By signing up you agree Terms &amp; conditions</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLabel" name="lbl_name">
-            <property name="text">
-             <string>FULL NAME</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>E-MAIL</string>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="line_name">
+            <property name="placeholderText">
+             <string>Enter your full name</string>
             </property>
            </widget>
           </item>
@@ -241,26 +230,17 @@ have fun with us.</string>
             </property>
            </widget>
           </item>
-          <item row="9" column="1">
-           <spacer name="verticalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
+          <item row="0" column="1">
+           <widget class="QLabel" name="lbl_name">
+            <property name="text">
+             <string>FULL NAME</string>
             </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>25</height>
-             </size>
-            </property>
-           </spacer>
+           </widget>
           </item>
-          <item row="4" column="1">
-           <widget class="QLineEdit" name="line_email">
-            <property name="placeholderText">
-             <string>Enter your e-mail addres</string>
+          <item row="3" column="1">
+           <widget class="QLabel" name="lbl_email">
+            <property name="text">
+             <string>E-MAIL</string>
             </property>
            </widget>
           </item>
@@ -280,8 +260,31 @@ have fun with us.</string>
             </property>
            </spacer>
           </item>
+          <item row="9" column="1">
+           <widget class="QCheckBox" name="checkBox">
+            <property name="text">
+             <string>By signing up you agree Terms &amp; conditions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>15</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item row="7" column="1">
-           <widget class="QLineEdit" name="lineEdit">
+           <widget class="QLineEdit" name="line_password">
             <property name="echoMode">
              <enum>QLineEdit::Password</enum>
             </property>
@@ -290,19 +293,37 @@ have fun with us.</string>
             </property>
            </widget>
           </item>
-          <item row="10" column="1">
-           <widget class="QPushButton" name="pushButton">
-            <property name="text">
-             <string>Sing Up</string>
+          <item row="11" column="2">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
             </property>
-           </widget>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>25</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="line_name">
-            <property name="placeholderText">
-             <string>Enter your full name</string>
+          <item row="10" column="1">
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
             </property>
-           </widget>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>25</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item row="2" column="1">
            <spacer name="verticalSpacer_5">
@@ -316,6 +337,67 @@ have fun with us.</string>
              <size>
               <width>20</width>
               <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="line_email">
+            <property name="placeholderText">
+             <string>Enter your e-mail addres</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QFrame" name="frame">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QPushButton" name="btn_singup">
+               <property name="text">
+                <string>Sing Up</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>150</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>10</height>
              </size>
             </property>
            </spacer>
