@@ -3,3 +3,6 @@ controller/__pycache__/login.cpython-310.pyc
 view/__pycache__/login.cpython-310.pyc
 style/__pycache__/style.cpython-310.pyc
 controller/__pycache__/loginController.cpython-310.pyc
+models.json
+.gitignore
+E61945A9A512ED5E1A3EE3F1A2365B88F8FE_E4E9EADA96734F01970E616FAB2FAC19
